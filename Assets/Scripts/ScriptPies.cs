@@ -27,4 +27,5 @@ public class ScriptPies : MonoBehaviour
         animacionpersonaje.puedoSaltar = false;
 
     }
+
 }
