@@ -36,10 +36,8 @@ public class animacionPersonaje1 : MonoBehaviour
 
         animacion.SetFloat("VelocidadX", x);
         animacion.SetFloat("VelocidadY", y);
-
-        if (
             
-            )
+        if (puedoSaltar)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -52,7 +50,6 @@ public class animacionPersonaje1 : MonoBehaviour
         {
             EstoyCayendo();
         }
-        if ()
     }
 
     public void EstoyCayendo()
@@ -69,18 +66,18 @@ public class animacionPersonaje1 : MonoBehaviour
 
     //    }
     //}
-    void OnCollisionEnter(Collision collision)
-    {
-        //Output the Collider's GameObject's name
-        Debug.Log(collision.collider.tag);
-    }   
+    //void OnCollisionEnter(Collision collision)
+    //{
+    //    //Output the Collider's GameObject's name
+    //    Debug.Log(collision.collider.tag);
+    //}   
 
-    void OnCollisionStay(Collision collision)
-    {
-        //Check to see if the Collider's name is "Chest"
-        if (collision.collider.tag == "Agua")
-        {
-            animacion.SetBool("Nade", true);
-        }
-    }
+    //void OnCollisionStay(Collision collision)
+    //{
+    //    //Check to see if the Collider's name is "Chest"
+    //    if (collision.collider.tag == "Agua")
+    //    {
+    //        animacion.SetBool("Nade", true);
+    //    }
+    //}
 }
